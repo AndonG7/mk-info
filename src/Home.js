@@ -10,7 +10,7 @@ async function newsFunction() {
   return newsData;
 }
  
-function App() {
+function Home() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -24,11 +24,15 @@ function App() {
   console.log(data);
   
   return (
-    <div className="App">
-      <h1>{data.articles[0].title}</h1>
-      <p>{data.articles[0].content}</p>
+    <div className="Home">
+      {data && (
+        <>
+          <h1>{data.articles[0].title}</h1>
+          <p>{data.articles[0].content}</p>
+        </>
+      )}
     </div>
   );
 }
 
-export default App;
+export default Home;
