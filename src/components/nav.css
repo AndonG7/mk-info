@@ -1,0 +1,38 @@
+.Nav {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 10px 70px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    color: rgb(10, 10, 10);
+    font-size: 3em;
+    font-weight: 900;
+    transition: all 0.2s ease-in-out;
+}
+
+.quote {
+    font-size: 1.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.Nav-sticky {
+    background-color: rgba(0, 0, 0, 0.950);
+}
+
+.logo-sticky {
+    color: white;
+    font-size: 2em;
+}
+
+.quote-sticky {
+    color: white;
+    font-size: 1em;
+}

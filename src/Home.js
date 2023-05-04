@@ -1,12 +1,15 @@
 import {React, useState, useEffect} from 'react';
+import Nav from './components/Nav';
+import TopThree from './components/topThree';
 
-async function newsFunction() {
+ async function newsFunction() {
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
   const response = await fetch(
-    `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=b389721bed374d918c0970b8cd034bdf`,
+    `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`,
     {mode: 'cors'}
     );
+  
   const newsData = await response.json();
-  console.log(newsData);
   return newsData;
 }
  
@@ -20,15 +23,15 @@ function Home() {
     }
     fetchData();
   }, []);
-
-  console.log(data);
   
   return (
     <div className="Home">
       {data && (
         <>
-          <h1>{data.articles[0].title}</h1>
-          <p>{data.articles[0].content}</p>
+          {/* <h1>{data.articles[0].title}</h1> */}
+          <Nav />
+          <TopThree ar1={data.articles[0]} ar2={data.articles[1]} ar3={data.articles[2]} />
+          <TopThree ar1={data.articles[3]} ar2={data.articles[4]} ar3={data.articles[5]} />
         </>
       )}
     </div>
@@ -36,3 +39,7 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
