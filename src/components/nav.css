@@ -1,35 +1,43 @@
 .Nav {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    padding: 10px 70px;
     position: fixed;
     right: 0;
     left: 0;
     z-index: 999;
+}
+
+.nav-bar {
+    background-color: transparent;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    background-color: rgba(0, 0, 0, 0.87);
     transition: all 0.3s ease-in-out;
 }
 
 .logo {
-    color: rgb(10, 10, 10);
-    font-size: 3em;
-    font-weight: 900;
+    height: 70px;
     transition: all 0.2s ease-in-out;
 }
 
 .quote {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    color: white;
     transition: all 0.2s ease-in-out;
 }
 
-.Nav-sticky {
-    background-color: rgba(0, 0, 0, 0.950);
+.top-news-line {
+    background-color: rgb(128, 3, 3);
+    color: white;
+    text-align: center;
+}
+
+.nav-bar-sticky {
+    background-color: black;
 }
 
 .logo-sticky {
-    color: white;
-    font-size: 2em;
+    height: 50px;
 }
 
 .quote-sticky {

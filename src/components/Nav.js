@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./nav.css";
+import logoBlack from "../images/mki-logo-black.png"
+import logoWhite from "../images/mki-logo-white.png"
 
 function Nav(props) {
   //Change css on scroll
   const [isSticky, setIsSticky] = useState(false);
   const changeStyle = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 25) {
       setIsSticky(true);
     } else {
       setIsSticky(false);
@@ -16,14 +18,19 @@ function Nav(props) {
 
 
   return (
-    <div className={isSticky ? 'Nav Nav-sticky' : 'Nav'}>
-      <div className={isSticky ? 'logo logo-sticky' : 'logo'}>MK-Info</div>
-      <div className="menu">
-        <span className={isSticky ? 'quote quote-sticky' : 'quote'}>
-          <a>Don't miss a thing</a>
-        </span>
+      <div className={isSticky ? 'Nav Nav-sticky' : 'Nav'}>
+        <div className={isSticky ? 'nav-bar nav-bar-sticky' : 'nav-bar'}>
+          <img className={isSticky ? "logo-sticky logo" : "logo"} alt="logo" src={logoWhite}></img>
+          <div className="menu">
+            <span className={isSticky ? 'quote quote-sticky' : 'quote'}>
+              <a>Don't miss a thing</a>
+            </span>
+          </div>
+        </div>
+        <div className="top-news-line">
+          <p>Now trending: ...</p>
+        </div>
       </div>
-    </div>
   );
 }
 
