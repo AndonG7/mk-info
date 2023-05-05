@@ -60,7 +60,7 @@
 
 .text-one h2{
     font-size: 2em;
-    padding: 10px;
+    padding: 0 0 10px 10px;
 }
 
 .text-one h4{
@@ -70,7 +70,7 @@
 }
 
 .text-two h2, .text-three h2 {
-    padding: 10px;
+    padding: 0 0 10px 10px;
     font-size: 1em;
 }
 
@@ -94,11 +94,11 @@
 }
 
 .desc-one h2, .desc-one h4, .desc-one p, .desc-one span {
-    padding: 10px;
+    padding: 0 0 10px 10px;
 }
 
 .desc-two h2, .desc-two h4, .desc-two p, .desc-two span, .desc-three h2, .desc-three h4, .desc-three p, .desc-three span {
-    padding: 10px;
+    padding: 0 0 0px 10px;
 }
 
 .desc-two h2, .desc-three h2 {
