@@ -1,0 +1,11 @@
+.MoreTrending {
+    height: 100vh;
+    width: 100%;
+    border: solid 1px red;
+}
+
+.moreTrending-headline {
+    text-align: center;
+    padding: 50px;
+    color: rgb(20, 20, 20);
+}

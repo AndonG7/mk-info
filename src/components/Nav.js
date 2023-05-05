@@ -1,9 +1,17 @@
+/* eslint-disable no-restricted-globals */
 import { useState } from "react";
 import "./nav.css";
 import logoBlack from "../images/mki-logo-black.png"
 import logoWhite from "../images/mki-logo-white.png"
 
 function Nav(props) {
+  //Trigger mobile style
+  let smallScreen = false;
+  const screenWidth = screen.width;
+  if (screenWidth <= 750) {
+    smallScreen = true;
+  } else smallScreen = false;
+
   //Change css on scroll
   const [isSticky, setIsSticky] = useState(false);
   const changeStyle = () => {
@@ -28,7 +36,7 @@ function Nav(props) {
           </div>
         </div>
         <div className={isSticky ? "top-news-line top-news-line-sticky" : "top-news-line"}>
-          <p>Now trending: {props.topHeadline.title}... <a href={props.topHeadline.url} target="_blank">Read more</a></p>
+          <p style={smallScreen ? {display:'none'} : {display:'block'}}>Now trending: {props.topHeadline.title}... <a href={props.topHeadline.url} target="_blank">Read more</a></p>
         </div>
       </div>
   );
