@@ -27,10 +27,20 @@
 }
 
 .top-news-line {
-    background-color: rgb(128, 3, 3);
+    background-color: rgba(155, 3, 3, 0.911);
     color: white;
     text-align: center;
+    font-size: 0em;
+    transition: all 0.2s ease-in-out;
 }
+
+.top-news-line p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Sticky CSS */
 
 .nav-bar-sticky {
     background-color: black;
@@ -42,5 +52,10 @@
 
 .quote-sticky {
     color: white;
+    font-size: 1em;
+}
+
+.top-news-line-sticky {
+    background-color: rgb(128, 3, 3);
     font-size: 1em;
 }

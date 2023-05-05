@@ -27,8 +27,8 @@ function Nav(props) {
             </span>
           </div>
         </div>
-        <div className="top-news-line">
-          <p>Now trending: ...</p>
+        <div className={isSticky ? "top-news-line top-news-line-sticky" : "top-news-line"}>
+          <p>Now trending: {props.topHeadline.title}... <a href={props.topHeadline.url} target="_blank">Read more</a></p>
         </div>
       </div>
   );
