@@ -13,7 +13,7 @@ function TopThree(props) {
         <div className="desc-one desc">
             <h4>{props.ar1.author}</h4>
             <h2>{props.ar1.title}</h2>
-            <p>{props.ar1.content}</p>
+            <p>{props.ar1.content.split('[')[0]}</p>
             <span><a href={props.ar1.url} target="_blank">Read More...</a></span>
         </div>
       </div>
@@ -26,7 +26,7 @@ function TopThree(props) {
             <div className="desc-two desc">
                 <h4>{props.ar2.author}</h4>
                 <h2>{props.ar2.title}</h2>
-                <p>{props.ar2.content}</p>
+                <p>{props.ar2.content.split('[')[0]}</p>
                 <span><a href={props.ar2.url} target="_blank">Read More...</a></span>
             </div>
         </div>
@@ -38,7 +38,7 @@ function TopThree(props) {
             <div className="desc-three desc">
                 <h4>{props.ar3.author}</h4>
                 <h2>{props.ar3.title}</h2>
-                <p>{props.ar3.content}</p>
+                <p>{props.ar3.content.split('[')[0]}</p>
                 <span><a href={props.ar3.url} target="_blank">Read More...</a></span>
             </div>
         </div>
