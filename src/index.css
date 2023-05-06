@@ -21,14 +21,15 @@ body {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: linear-gradient(0deg, rgba(255,255,255,0.5) 60%, rgba(0,0,0,0.92) 90%);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5) 60%, rgba(0,0,0,1) 90%);
 
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgba(155, 3, 3, 0.911);
-    border-radius: 15px;
+    border-radius: 25px;
+    border: solid 1px rgba(92, 2, 2, 0.911);
   }
   
   /* Handle on hover */
