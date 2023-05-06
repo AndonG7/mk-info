@@ -1,5 +1,6 @@
 import {React, useState, useEffect} from 'react'; 
 import './moreTrending.css';
+import WeatherCard from './WeatherCard';
  
 function MoreTrending(props) {
   async function moreNews() {
@@ -51,7 +52,7 @@ function MoreTrending(props) {
               </div>
               );
             })}
-            <div className="news-card5">Tralalala</div>
+            <WeatherCard className="news-card5" />
           </div>
         </>
       ) : (
