@@ -27,11 +27,11 @@ function MoreTrending(props) {
   console.log(newsData);
   
   const news = newsData ? [
-    {title: newsData.articles[8].title, content: newsData.articles[8].content, source: newsData.articles[8].author, imageUrl: newsData.articles[8].urlToImage},
-    {title: newsData.articles[4].title, content: newsData.articles[4].content, source: newsData.articles[4].author, imageUrl: newsData.articles[4].urlToImage},
-    {title: newsData.articles[5].title, content: newsData.articles[5].content, source: newsData.articles[5].author, imageUrl: newsData.articles[5].urlToImage},
-    {title: newsData.articles[6].title, content: newsData.articles[6].content, source: newsData.articles[6].author, imageUrl: newsData.articles[6].urlToImage},
-    {title: newsData.articles[7].title, content: newsData.articles[7].content, source: newsData.articles[7].author, imageUrl: newsData.articles[7].urlToImage},
+    {title: newsData.articles[4].title, content: newsData.articles[4].content, source: newsData.articles[4].author, imageUrl: newsData.articles[4].urlToImage, url: newsData.articles[4].url},
+    {title: newsData.articles[5].title, content: newsData.articles[5].content, source: newsData.articles[5].author, imageUrl: newsData.articles[5].urlToImage, url: newsData.articles[5].url},
+    {title: newsData.articles[6].title, content: newsData.articles[6].content, source: newsData.articles[6].author, imageUrl: newsData.articles[6].urlToImage, url: newsData.articles[6].url},
+    {title: newsData.articles[7].title, content: newsData.articles[7].content, source: newsData.articles[7].author, imageUrl: newsData.articles[7].urlToImage, url: newsData.articles[7].url},
+    {title: newsData.articles[8].title, content: newsData.articles[8].content, source: newsData.articles[8].author, imageUrl: newsData.articles[8].urlToImage, url: newsData.articles[8].url},
   ] : [];
   
   return (
@@ -46,7 +46,7 @@ function MoreTrending(props) {
                 <div className="more-news-image" style={{backgroundImage: `url(${_news.imageUrl})`}} ></div>
                 <div className="more-news-details">
                   <h2 className="more-news-title">{_news.title}</h2>
-                  <p className="more-news-content">{_news.content.split('[')[0]}</p>
+                  <p className="more-news-content">{_news.content.split('[')[0]} <a href={_news.url}>Read More</a></p>
                   <p className="more-news-source">{_news.source}</p>
                 </div>
               </div>

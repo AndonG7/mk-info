@@ -50,7 +50,7 @@ function WeatherCard(props) {
           }
         >
           <div className="weather-header">
-            <p className='weather-city'>{weatherData.location.name}</p>
+            <div className='weather-city'>{city}</div>
             <div className="condition-details">
               <p className='weather-temperature'>{weatherData.current.temp_c} °C</p>
               <img src={weatherData.current.condition.icon} alt="condition" ></img>

@@ -14,6 +14,7 @@
 .weather-header {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     flex: 1;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +25,13 @@
     font-size: 1.3em;
     padding-top: 15px;
     text-shadow: 1px 1px 1px black;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.weather-city:focus {
+    outline: none;
 }
 
 .condition-details {
