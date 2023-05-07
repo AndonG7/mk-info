@@ -1,8 +1,8 @@
 /* eslint-disable no-restricted-globals */
 import { useState } from "react";
 import "./nav.css";
-import logoBlack from "../images/mki-logo-black.png"
 import logoWhite from "../images/mki-logo-white.png"
+import SlidingNews from "./slidingNews";
 
 function Nav(props) {
   //Trigger mobile style
@@ -35,8 +35,9 @@ function Nav(props) {
             </span>
           </div>
         </div>
-        <div className={isSticky ? "top-news-line top-news-line-sticky" : "top-news-line"}>
-          <p style={smallScreen ? {display:'none'} : {display:'block'}}>Now trending: {props.topHeadline.title}... <a href={props.topHeadline.url} target="_blank">Read more</a></p>
+        <div className={isSticky ? "top-news-line top-news-line-sticky " : "top-news-line"}>
+          {/* <p style={smallScreen ? {display:'none'} : {display:'block'}}>Now trending: {props.topHeadline.title}... <a href={props.topHeadline.url} target="_blank">Read more</a></p> */}
+          <SlidingNews topHeadlines={props.topHeadlines}/>
         </div>
       </div>
   );

@@ -5,7 +5,7 @@ function TopThree(props) {
   
   return (
     <div className="topThree">
-      <div class="topThree-section">
+      <div className="topThree-section">
         <div className="n-one news-card" style={{ backgroundImage: `url(${props.ar1.urlToImage})`}}>
           <div className="text-one text">
               <h4>{props.ar1.author}</h4>

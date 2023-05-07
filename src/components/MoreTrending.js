@@ -6,7 +6,7 @@ function MoreTrending(props) {
   async function moreNews() {
     const apiKey = process.env.REACT_APP_NEWS_API_KEY;
     const response = await fetch(
-      `https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=${apiKey}`,
+      `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`,
       {mode: 'cors'}
     );
     
@@ -38,21 +38,21 @@ function MoreTrending(props) {
     <div className="MoreTrending">
       {newsData ? (
         <>
-          <h2 className='moreTrending-headline'>More news</h2>
+          <h2 className='moreTrending-headline'>Trending Worldwide</h2>
           <div className="more-news-cards">
             {news.map((_news, index) => {
               return (
               <div className={`more-news-card news-card${index}`} key={index} style={{ order: index}} >
-                <img className="more-news-image" src={_news.imageUrl} alt="news"></img>
-                <div className="details">
+                <div className="more-news-image" style={{backgroundImage: `url(${_news.imageUrl})`}} ></div>
+                <div className="more-news-details">
                   <h2 className="more-news-title">{_news.title}</h2>
-                  <p className="more-news-content">{_news.content}</p>
+                  <p className="more-news-content">{_news.content.split('[')[0]}</p>
                   <p className="more-news-source">{_news.source}</p>
                 </div>
               </div>
               );
             })}
-            <WeatherCard className="news-card5" />
+            <WeatherCard />
           </div>
         </>
       ) : (

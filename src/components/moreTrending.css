@@ -1,72 +1,105 @@
 .MoreTrending {
     width: 100%;
-    border: solid 1px red;
-}
+    margin-top: 100px;
+    background: rgb(0,0,0);
+    background: linear-gradient(36deg, rgba(0,0,0,1) 8%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,1) 90%);
+    padding: 15px;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  }
 
 .moreTrending-headline {
     text-align: center;
     padding: 50px;
-    color: rgb(20, 20, 20);
-}
+    /* color: rgb(20, 20, 20); */
+    color: white;
+  }
 
 .more-news-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-gap: 10px;
   }
   
   .news-card0 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
   }
   
   .news-card1 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
   }
   
   .news-card2 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 4;
   }
   
   .news-card3 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
   }
   
   .news-card4 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     grid-row-start: 5;
     grid-row-end: 6;
   }
   
   .news-card5 {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 3;
 
+    border-radius: 25px;
     background-color: white;
   }
   
 .more-news-card {
     display: flex;
-    background-color: white;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 10px;
 }
 
 .more-news-image {
-    height: 150px;
+  width: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
 }
 
+.more-news-details {
+  flex: 3;
+}
+
+.more-news-title {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.more-news-content {
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.more-news-source {
+  color: rgba(255, 255, 255, 0.925);
+  font-weight: 700;
+}
