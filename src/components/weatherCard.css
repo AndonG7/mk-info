@@ -69,3 +69,62 @@
     text-shadow: 1px 1px 1px black;
 }
 
+@media only screen and (max-width: 620px) { 
+    .weather-card {
+        flex-direction: row;
+        border-radius: 5px;
+    }
+    
+    .weather-header {
+        padding: 10px;
+        padding-right: 0;
+        flex: 1;
+    }
+    
+    .weather-city {
+        text-align: start;
+        font-size: 1.3em;
+        padding-top: 15px;
+        text-shadow: 1px 1px 1px black;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .weather-city:focus {
+        outline: none;
+    }
+    
+    .condition-details {
+        gap: 5px;
+        flex: 1;
+    }
+    
+    .weather-temperature {
+        font-size: 1.2em;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    .weather-details {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .weather-detail {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-shadow: 1px 1px 1px black;
+        font-size: 0.85em;
+    }
+    
+    .weather-detail p {
+        font-weight: 700;
+        text-shadow: 1px 1px 1px black;
+    }
+
+}

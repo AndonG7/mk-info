@@ -23,12 +23,19 @@ const RouteSwitch = () => {
         setTopData(result);
       }
       fetchData();
+
+      // Trigger mobile style
+    // eslint-disable-next-line no-restricted-globals
+    const screenWidth = screen.width;
+    setSmallScreen(screenWidth <= 750);
     }, []);
+
+  const [smallScreen, setSmallScreen] = useState(false);
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home topData={topData} />} />
+        <Route path="/" element={<Home topData={topData} smallScreen={smallScreen} />} />
       </Routes>
     </BrowserRouter>
   );

@@ -43,11 +43,18 @@ function MoreTrending(props) {
             {news.map((_news, index) => {
               return (
               <div className={`more-news-card news-card${index}`} key={index} style={{ order: index}} >
-                <div className="more-news-image" style={{backgroundImage: `url(${_news.imageUrl})`}} ></div>
-                <div className="more-news-details">
-                  <h2 className="more-news-title">{_news.title}</h2>
-                  <p className="more-news-content">{_news.content.split('[')[0]} <a href={_news.url}>Read More</a></p>
-                  <p className="more-news-source">{_news.source}</p>
+                <div className="more-news-card-content">
+                  <div className="more-news-image" style={{backgroundImage: `url(${_news.imageUrl})`}} ></div>
+                  <div className="more-news-details">
+                    <p className="more-news-source">{_news.source}</p>
+                    <h2 className="more-news-title">{_news.title}</h2>
+                    <p className={props.smallScreen ? "more-news-content-false more-news-content" : "more-news-content"}>{_news.content.split('[')[0]} <a href={_news.url}>Read More</a></p>
+                    <p className="click-for-more">Click for more</p>
+                  </div>
+                </div>
+                <div className="more-news-card-desc">
+                  <p>{_news.content.split('[')[0]}</p>
+                  <span><a href={_news.url} target="_blank">Read More...</a></span>
                 </div>
               </div>
               );

@@ -68,14 +68,12 @@
   
 .more-news-card {
     display: flex;
+    position: relative;
     gap: 10px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 2px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 10px;
 }
 
 .more-news-image {
@@ -99,6 +97,10 @@
   color: rgba(255, 255, 255, 0.938);
 }
 
+.more-news-content-false {
+  display: none;
+}
+
 .more-news-content a{
   color: rgba(255, 255, 255, 0.938);
   text-decoration: none;
@@ -108,4 +110,126 @@
 .more-news-source {
   color: rgba(255, 255, 255, 0.925);
   font-weight: 700;
+}
+
+.more-news-card-content {
+  display: flex;
+  gap: 10px;
+}
+
+.more-news-card-desc {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s; /* Add a transition for a smooth effect */
+}
+
+.click-for-more {
+  display: none;
+}
+
+.more-news-card-desc p, .more-news-card-desc span {
+  padding: 0 10px;
+  color: white;
+}
+
+.more-news-card-desc a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 620px) { 
+  .MoreTrending {
+    width: auto;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+.moreTrending-headline {
+    padding: 25px;
+  }
+
+.more-news-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.click-for-more {
+  display: block;
+  color: white;
+  font-weight: 700;
+}
+
+  
+  .news-card0 {
+    flex: 1;
+    order: 0;
+  }
+  
+  .news-card1 {
+    flex: 1;
+    order: 5;
+  }
+  
+  .news-card2 {
+    flex: 1;
+    order: 1;
+  }
+  
+  .news-card3 {
+    flex: 1;
+    order: 2;
+  }
+  
+  .news-card4 {
+    flex: 1;
+    order: 3;
+  }
+  
+  .news-card5 {
+    flex: 1;
+    order: 1;
+    height: 50px;
+  }
+  
+.more-news-card, .news-card5 {
+  flex: 1;
+}
+
+.more-news-card {
+    min-height: 150px;
+    padding: 10px;
+}
+
+.more-news-card:hover {
+  padding: 0;
+}
+
+.more-news-card:hover > .more-news-card-desc {
+  opacity: 1;
+}
+
+.more-news-image {
+  width: 40%;
+}
+
+.more-news-title {
+  font-size: 1.2em;
+}
+
+.more-news-source {
+  color: rgba(255, 255, 255, 0.925);
+  font-weight: 700;
+  font-size: 0.8em;
+}
+}
+
+@media only screen and (max-width: 800px) { 
+
 }

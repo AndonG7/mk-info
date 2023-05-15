@@ -5,12 +5,6 @@ import logoWhite from "../images/mki-logo-white.png"
 import SlidingNews from "./slidingNews";
 
 function Nav(props) {
-  //Trigger mobile style
-  let smallScreen = false;
-  const screenWidth = screen.width;
-  if (screenWidth <= 750) {
-    smallScreen = true;
-  } else smallScreen = false;
 
   //Change css on scroll
   const [isSticky, setIsSticky] = useState(false);
