@@ -25,7 +25,7 @@ function Nav(props) {
           <img className={isSticky ? "logo-sticky logo" : "logo"} alt="logo" src={logoWhite}></img>
           <div className="menu">
             <span className={isSticky ? 'quote quote-sticky' : 'quote'}>
-              <a>Don't miss a thing</a>
+              <a>Се на едно место</a>
             </span>
           </div>
         </div>

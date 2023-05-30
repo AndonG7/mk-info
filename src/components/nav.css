@@ -95,25 +95,31 @@
     }
     
     .logo {
-        height: 60px;
+        height: 80px;
     }
     
     .quote {
-        font-size: 1em;
+        font-size: 1.5em;
+    }
+
+    .top-news-line {
+        font-size: 1.2em;
+        margin-left: -3px;
     }
     
     /* Sticky CSS */
     
     .logo-sticky {
-        height: 50px;
+        height: 70px;
     }
     
     .quote-sticky {
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
     
     .top-news-line-sticky {
-        font-size: 0.8em;
+        font-size: 1.2em;
         padding: 0 15px;
+        margin-left: -10px;
     }
 }

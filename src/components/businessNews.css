@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.businessNews {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.business-news-headline {
+    margin-bottom: -5px;
+}
+
+.business-news-card {
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding within the width */
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.business-author {
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 0.95em;
+    color: rgba(155, 3, 3, 0.911);
+}
+
+.business-url a, .find-more a {
+    font-weight: 300;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.904);
+}
+
+.business-more {
+    text-align: center;
+    font-size: 1em;
+}
+
+@media (max-width: 620px) {
+    .business-news-headline,
+    .business-title {
+        font-size: 1.5em;
+    }
+
+    .business-title {
+        font-weight: 600;
+    }
+    
+    .business-author {
+        font-weight: 400;
+    }
+    
+    .business-url a, .find-more a {
+        font-weight: 400;
+    }
+  }

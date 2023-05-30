@@ -138,7 +138,7 @@
 /* Tablet Style*/
 @media only screen and (max-width: 800px) {
     .topThree {
-        padding-top: 130px;
+        padding-top: 150px;
     }
     
     .text-one h2{
@@ -178,7 +178,7 @@
 /* Mobile Style */
 @media only screen and (max-width: 620px) {
     .topThree {
-        padding-top: 120px;
+        padding-top: 170px;
     }
     
     .topThree-section {

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.NewsList {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.news-card {
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding within the width */
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.news-author {
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 0.95em;
+    color: rgba(155, 3, 3, 0.911);
+}
+
+.news-url a {
+    font-weight: 300;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.904);
+}
+
+@media (max-width: 620px) {
+    .sport-news-headline,
+    .sport-title {
+        font-size: 1.5em;
+    }
+
+    .sport-title {
+        font-weight: 600;
+    }
+    
+    .sport-author {
+        font-weight: 400;
+    }
+    
+    .sport-url a, .find-more a {
+        font-weight: 400;
+    }
+  }
