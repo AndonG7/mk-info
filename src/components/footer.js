@@ -6,16 +6,16 @@ function Footer(props) {
         <div className="footer">
             <div className="footer-info">
                 <div className='footer-nav'>
-                    <h2>Навигација</h2>
+                    <h2>Navigation</h2>
                     <ul>
-                        <li>Дома</li>
-                        <li>Спорт</li>
-                        <li>Технологија</li>
-                        <li>Бизнис</li>
+                        <li><a href='/'>Home</a></li>
+                        <li><a href='/sport'>Sport</a></li>
+                        <li><a href='/technology'>Technology</a></li>
+                        <li><a href='/business'>Business</a></li>
                     </ul>
                 </div>
                 <div className='footer-contact'>
-                    <h2>Контакт</h2>
+                    <h2>Contact</h2>
                     <ul>
                         <li>Email</li>
                         <li>Phone</li>
@@ -23,10 +23,10 @@ function Footer(props) {
                     </ul>
                 </div>
                 <div className='footer-quote'>
-                    <h2>Се на едно место</h2>
+                    <h2>All in one place</h2>
                 </div>
             </div>
-            <div className='copyright'>Сите права се задржани © MK-Info</div>
+            <div className='copyright'>All rights reserved © MK-Info</div>
         </div>
   );
 }

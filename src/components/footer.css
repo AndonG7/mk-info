@@ -16,6 +16,15 @@
     list-style: none;
 }
 
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width: 620px) {
     .footer-info {
         padding: 50px;
