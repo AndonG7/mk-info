@@ -3,7 +3,6 @@ import './NewsList.css'
 
 function NewsList(props) {
     const newsData = props.newsData;
-    console.log(newsData);
 
     return (
         <div className="NewsList">

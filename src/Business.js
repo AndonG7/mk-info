@@ -12,7 +12,7 @@ function Business(props) {
     <div className="Business">
       {topData && (
         <>
-          <Nav topHeadlines={[topData.articles[0], topData.articles[1], topData.articles[2]]} />
+          <Nav active={"Business"} topHeadlines={[topData.articles[0], topData.articles[1], topData.articles[2]]} />
         </>
       )}
       <Banner name="Business" img={businessImage} />

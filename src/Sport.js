@@ -12,7 +12,7 @@ function Sport(props) {
     <div className="Sport">
       {topData && (
         <>
-          <Nav topHeadlines={[topData.articles[0], topData.articles[1], topData.articles[2]]} />
+          <Nav active={"Sport"} topHeadlines={[topData.articles[0], topData.articles[1], topData.articles[2]]} />
         </>
       )}
       <Banner name="Sport" img={sportImage} />

@@ -72,8 +72,6 @@ const RouteSwitch = () => {
         setSportData(sportResult);
         setTechnologyData(technologyResult);
         setBusinessData(businessResult);
-
-        console.log(businessResult);
       }
       fetchData();
 
@@ -98,7 +96,7 @@ const RouteSwitch = () => {
             />
           } />
           <Route path="sport" element= { <Sport topData={topData} sportData={sportData} /> }/>
-          <Route path="technology" element= { <Technology topData={topData} technologyData={technologyData} /> }/>
+          <Route path="technology" element= { <Technology topData={topData} technologyData={technologyData}  /> }/>
           <Route path="business" element= { <Business topData={topData} businessData={businessData} /> }/>
       </Routes>
     </BrowserRouter>

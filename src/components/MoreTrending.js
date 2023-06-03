@@ -23,8 +23,6 @@ function MoreTrending(props) {
     }
     fetchData();
   }, []);
-
-  console.log(newsData);
   
   const news = newsData ? [
     {title: newsData.articles[4].title, content: newsData.articles[4].content, source: newsData.articles[4].author, imageUrl: newsData.articles[4].urlToImage, url: newsData.articles[4].url},

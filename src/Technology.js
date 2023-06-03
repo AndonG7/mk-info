@@ -12,7 +12,7 @@ function Technology(props) {
     <div className="Technology">
       {topData && (
         <>
-          <Nav topHeadlines={[topData.articles[0], topData.articles[1], topData.articles[2]]} />
+          <Nav active={"Technology"} topHeadlines={[topData.articles[0], topData.articles[1], topData.articles[2]]} />
         </>
       )}
       <Banner name="Technology" img={technologyImage} />

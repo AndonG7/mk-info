@@ -4,7 +4,7 @@ function SlidingNews(props) {
   
   
   return (
-    <div class="news-container">
+    <div className="news-container">
         <span className="breaking">BREAKING: </span>
         <ul>
             <li><a href={props.topHeadlines[0].url} target="blank">{props.topHeadlines[0].title}</a></li>

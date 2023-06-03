@@ -18,10 +18,8 @@ function WeatherCard(props) {
         );
         const data = await response.json();
         setWeatherData(data);
-        console.log(weatherData);
 
       } catch (error) {
-        console.log('Error:', error);
       }
     }
     fetchWeatherData();
@@ -34,7 +32,6 @@ function WeatherCard(props) {
       setIsDay(true);
     }
   
-    console.log(weatherData?.current?.isDay, isDay);
   }, [isDay, weatherData]);
 
 
