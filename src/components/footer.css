@@ -25,6 +25,11 @@
     color: white;
 }
 
+.footer-contact img {
+    width: 20px;
+    padding-right: 5px;
+}
+
 @media (max-width: 620px) {
     .footer-info {
         padding: 50px;

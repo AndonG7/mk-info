@@ -1,5 +1,8 @@
 import {React} from 'react';
 import './footer.css'
+import email from "../images/email.png"
+import phone from "../images/phone.png"
+import location from "../images/location.png"
  
 function Footer(props) {
     return (
@@ -17,9 +20,9 @@ function Footer(props) {
                 <div className='footer-contact'>
                     <h2>Contact</h2>
                     <ul>
-                        <li>Email</li>
-                        <li>Phone</li>
-                        <li>Address</li>
+                        <li><img src={email} alt='email'></img>andon4ee@gmail.com</li>
+                        <li><img src={phone} alt='phone'></img>+389 555 555 555</li>
+                        <li><img src={location} alt='location'></img>Ploshtad Marshal Tito bb 1430 Kavadarci</li>
                     </ul>
                 </div>
                 <div className='footer-quote'>

@@ -254,7 +254,7 @@
 /* Tablet Style*/
 @media only screen and (max-width: 850px) {
     .nav-bar {
-        padding: 10px 120px;
+        padding: 10px 100px;
     }
     .logo {
         height: 60px;
@@ -265,7 +265,7 @@
         height: 40px;
     }
     .nav-bar-sticky {
-        padding: 10px 100px;
+        padding: 10px 90px;
     }
     
     /* Hamburger Style */
