@@ -96,6 +96,7 @@ body {
     height: 100%;
     width: 100%;
     color: white;
+    padding: 10px;
     opacity: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.836) 20%, rgba(1,0,0,1) 80%, rgba(0,0,0,1) 100%);
     transition: all 0.3s ease-in-out;
@@ -104,23 +105,13 @@ body {
     justify-content: center;
 }
 
-.desc-one h2, .desc-one h4, .desc-one p, .desc-one span {
-    padding: 0 0 10px 10px;
-}
-
-.desc-two h2, .desc-two h4, .desc-two p, .desc-two span, .desc-three h2, .desc-three h4, .desc-three p, .desc-three span {
-    padding: 0 0 0px 10px;
-}
-
 .desc-two h2, .desc-three h2 {
     font-size: 1em;
 }
 
-
 .desc-two h4, .desc-three h4 {
     font-size: 0.7em;
 }
-
 
 .desc-two p, .desc-three p {
     font-size: 0.8em;
@@ -137,101 +128,148 @@ body {
 }
 
 /* Small Desktop Style*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1025px) {
     .topThree {
-        padding-top: 140px;
+        padding-top: 160px;
     }
-}
-
-/* Tablet Style*/
-@media only screen and (max-width: 800px) {
-    .topThree {
-        padding-top: 150px;
+    .topThree-section {
+        height: 70vh;
     }
-    
     .text-one h2{
-        font-size: 1em;
+        font-size: 1.7em;
     }
-    
     .text-one h4{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
-    
-    .desc-one h2, .desc-one h4, .desc-one p, .desc-one span {
-        padding: 0 0 0 10px;
+    .text-two h2, .text-three h2 {
+        font-size: 0.9em;
     }
-
-    .desc-one h2 {
-        font-size: 1em;
+    .text-two h4, .text-three h4{
+        font-size: 0.65em;
     }
-    
-    .desc-one h4, .desc-one p, .desc-one span {
-        font-size: 0.85em;
-    }
-
-    .desc-two h2, .desc-two h4, .desc-two p, .desc-two span, .desc-three h2, .desc-three h4, .desc-three p, .desc-three span {
-        padding: 0 0 0px 10px;
-    }
-    
     .desc-two h2, .desc-three h2 {
         font-size: 0.8em;
     }
-    
-    
-    .desc-two h4, .desc-three h4, .desc-two p, .desc-three p, .desc-two span a, .desc-three span a {
-        font-size: 0.7em;
+    .desc-two h4, .desc-three h4 {
+        font-size: 0.55em;
     }
+    .desc-two p, .desc-three p {
+        font-size: 0.65em;
+    }    
+    .desc-two span a, .desc-three span a {
+        font-size: 0.65em;
+    }   
 }
 
-/* Mobile Style */
-@media only screen and (max-width: 620px) {
+/* Tablet Style*/
+@media only screen and (max-width: 850px) {
     .topThree {
-        padding-top: 170px;
+        padding-top: 145px;
     }
-    
     .topThree-section {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        height: 70vh;
     }
-    
-    .n-one, .n-two, .n-three {
-        height: 40vh;
-        flex: auto;
-    }
-    
     .text-one h2{
-        font-size: 1em;
+        font-size: 1.4em;
     }
-    
     .text-one h4{
         font-size: 0.7em;
     }
-    
-    .desc-one h2, .desc-one h4, .desc-one p, .desc-one span {
-        padding: 0 0 0 10px;
+    .text-two h2, .text-three h2 {
+        font-size: 0.8em;
     }
-
+    .text-two h4, .text-three h4{
+        font-size: 0.65em;
+    }
     .desc-one h2 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
-    
-    .desc-one h4, .desc-one p, .desc-one span {
-        font-size: 0.85em;
+    .desc-one h4 {
+        font-size: 0.6em;
     }
-
-    .desc-two h2, .desc-two h4, .desc-two p, .desc-two span, .desc-three h2, .desc-three h4, .desc-three p, .desc-three span {
-        padding: 0 0 0px 10px;
+    .desc-one p {
+        font-size: 0.9em;
     }
-    
+    .desc-one span {
+        font-size: 0.9em;
+    }
     .desc-two h2, .desc-three h2 {
-        font-size: 1em;
+        font-size: 0.8em;
     }
-    
-    
-    .desc-two h4, .desc-three h4, .desc-two p, .desc-three p, .desc-two span a, .desc-three span a {
-        font-size: 0.85em;
+    .desc-two h4, .desc-three h4 {
+        font-size: 0.55em;
     }
-    
+    .desc-two p, .desc-three p {
+        font-size: 0.65em;
+    }    
+    .desc-two span a, .desc-three span a {
+        font-size: 0.65em;
+    }
+}
+
+/* Large Mobile/Small tablet Style */
+@media only screen and (max-width: 650px) {
+    .topThree {
+        padding-top: 135px;
+    }
+    .topThree-section {
+        flex-direction: column;
+        height: 150vh;
+    }
+    .n-one {
+        flex: 0.5;
+    }
+    .n-two, .n-three {
+        flex: 1.5;
+    }
+    .text-one h2{
+        font-size: 1.1em;
+    }
+    .text-one h4{
+        font-size: 0.7em;
+    }
+    .text-two h2, .text-three h2 {
+        font-size: 1.1em;
+    }
+    .text-two h4, .text-three h4{
+        font-size: 0.7em;
+    }
+    .desc-one h2 {
+        font-size: 0.9em;
+    }
+    .desc-one h4 {
+        font-size: 0.7em;
+    }
+    .desc-one p {
+        font-size: 0.7em;
+    }
+    .desc-one span {
+        font-size: 0.7em;
+    }
+    .desc-two h2, .desc-three h2 {
+        font-size: 0.9em;
+    }
+    .desc-two h4, .desc-three h4 {
+        font-size: 0.7em;
+    }
+    .desc-two p, .desc-three p {
+        font-size: 0.7em;
+    }    
+    .desc-two span a, .desc-three span a {
+        font-size: 0.7em;
+    }  
+}
+
+/* Mobile Style */
+@media only screen and (max-width: 480px) {
+    .topThree {
+        padding-top: 130px;
+    }  
+}
+
+/* Small Mobile Style */
+@media only screen and (max-width: 400px) {
+    .topThree {
+        padding-top: 120px;
+    }
 }
