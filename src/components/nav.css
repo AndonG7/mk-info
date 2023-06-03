@@ -123,8 +123,6 @@
     width: 100%;
   }
   
-
-/* Hamburger Style */
 /* Hamburger Style */
 .hamburger {
     width: 25px;
@@ -221,51 +219,129 @@
   
 
 /* Small Desktop Style*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1025px) {
     .nav-bar {
+        padding: 10px 120px;
+    }
+    .logo {
+        height: 60px;
+    }
+    .menu {
+        font-size: 1.1em;
+    }
+    .top-news-line {
+        font-size: 1em;
+    }
+
+    /* Sticky CSS */
+    .logo-sticky {
+        height: 40px;
+    }
+    .menu-sticky {
+        font-size: 0.9em;
+    }
+    .nav-bar-sticky {
         padding: 10px 100px;
+    }
+    .top-news-line-sticky {
+        font-size: 0.9em;
+    }
+    .menu-list {
+        gap: 30px;
     }
 }
 
 /* Tablet Style*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .nav-bar {
-        padding: 10px 50px;
+        padding: 10px 120px;
+    }
+    .logo {
+        height: 60px;
+    }
+
+    /* Sticky CSS */
+    .logo-sticky {
+        height: 40px;
+    }
+    .nav-bar-sticky {
+        padding: 10px 100px;
+    }
+    
+    /* Hamburger Style */
+    .hamburger-menu {
+        width: 30%;
+    }
+    .hamburger-menu-list {
+        padding-top: 15px;
+        gap: 15px;
+    }
+    .hamburger-menu-list li a {
+        font-size: 1.2em;
+    }
+    .social-media-icons img {
+        height: 25px;
+    }
+}
+
+/* Large mobile/Small tablet style */
+@media only screen and (max-width: 650px) {
+    .nav-bar {
+        padding: 10px 80px;
+    }
+    .logo {
+        height: 50px;
+    }
+    .logo-sticky {
+        height: 40px;
+    }
+    .hamburger-menu {
+        width: 40%;
     }
 }
 
 /* Mobile Style */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     .nav-bar {
-        padding: 10px 25px;
+        padding: 10px 50px;
     }
-    
     .logo {
-        height: 80px;
-    }
-    
-    .menu {
-        font-size: 1.5em;
+        height: 50px;
     }
 
-    .top-news-line {
-        font-size: 1.2em;
-        margin-left: -3px;
-    }
-    
     /* Sticky CSS */
-    
     .logo-sticky {
-        height: 70px;
+        height: 40px;
+    }
+    .nav-bar-sticky {
+        padding: 10px 40px;
     }
     
-    .menu-sticky {
-        font-size: 1.2em;
+    /* Hamburger Style */
+    .hamburger-menu {
+        width: 50%;
+    }
+}
+
+/* Small Mobile Style */
+@media only screen and (max-width: 400px) {
+    .nav-bar {
+        padding: 10px 45px;
+    }
+    .logo {
+        height: 35px;
+    }
+
+    /* Sticky CSS */
+    .logo-sticky {
+        height: 35px;
+    }
+    .nav-bar-sticky {
+        padding: 10px 35px;
     }
     
-    .top-news-line-sticky {
-        font-size: 1.2em;
-        padding: 0 15px;
-        margin-left: -10px;
+    /* Hamburger Style */
+    .hamburger-menu {
+        width: 70%;
     }
 }
