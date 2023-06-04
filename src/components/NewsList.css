@@ -33,22 +33,3 @@
     text-decoration: none;
     color: rgba(0, 0, 0, 0.904);
 }
-
-@media (max-width: 620px) {
-    .sport-news-headline,
-    .sport-title {
-        font-size: 1.5em;
-    }
-
-    .sport-title {
-        font-weight: 600;
-    }
-    
-    .sport-author {
-        font-weight: 400;
-    }
-    
-    .sport-url a, .find-more a {
-        font-weight: 400;
-    }
-  }

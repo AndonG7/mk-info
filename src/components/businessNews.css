@@ -42,21 +42,75 @@
     font-size: 1em;
 }
 
-@media (max-width: 620px) {
-    .business-news-headline,
+@media (max-width: 1025px) {
+    .businessNews {
+        margin-top: 50px;
+    }
+    .business-news-headline {
+        font-size: 2em;
+    }
+    .business-author {
+        font-size: 0.95em;
+    }.business-url a, .find-more a {
+        font-weight: 300;
+    }
+    .find-more {
+        font-size: 1em;
+    }   
+}
+
+@media (max-width: 850px) {
+    .businessNews {
+        margin-top: 40px;
+    }
+    .business-news-headline {
+        font-size: 1.7em;
+    }
     .business-title {
         font-size: 1.5em;
     }
-
-    .business-title {
-        font-weight: 600;
-    }
-    
     .business-author {
+        font-size: 0.85em;
+        font-weight: 400;
+    }.business-url a, .find-more a {
+        font-size: 0.85em;
         font-weight: 400;
     }
-    
+}
+
+@media (max-width: 650px) {
+    .businessNews {
+        margin-top: 35px;
+    }
+    .business-news-headline {
+        font-size: 1.4em;
+    }
+    .business-title {
+        font-size: 1em;
+    }
+    .business-author {
+        font-size: 0.8em;
+        font-weight: 400;
+    }
     .business-url a, .find-more a {
+        font-size: 0.8em;
         font-weight: 400;
     }
-  }
+}
+
+@media (max-width: 480px) {
+    .business-news-headline {
+        font-size: 1.2em;
+    }
+    .business-title {
+        font-size: 0.9em;
+    }
+    .business-author {
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+    .business-url a, .find-more a {
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+}

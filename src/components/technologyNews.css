@@ -42,21 +42,75 @@
     font-size: 1em;
 }
 
-@media (max-width: 620px) {
-    .technology-news-headline,
+@media (max-width: 1025px) {
+    .technologyNews {
+        margin-top: 50px;
+    }
+    .technology-news-headline {
+        font-size: 2em;
+    }
+    .technology-author {
+        font-size: 0.95em;
+    }.technology-url a, .find-more a {
+        font-weight: 300;
+    }
+    .find-more {
+        font-size: 1em;
+    }   
+}
+
+@media (max-width: 850px) {
+    .technologyNews {
+        margin-top: 40px;
+    }
+    .technology-news-headline {
+        font-size: 1.7em;
+    }
     .technology-title {
         font-size: 1.5em;
     }
-
-    .technology-title {
-        font-weight: 600;
-    }
-    
     .technology-author {
+        font-size: 0.85em;
+        font-weight: 400;
+    }.technology-url a, .find-more a {
+        font-size: 0.85em;
         font-weight: 400;
     }
-    
+}
+
+@media (max-width: 650px) {
+    .technologyNews {
+        margin-top: 35px;
+    }
+    .technology-news-headline {
+        font-size: 1.4em;
+    }
+    .technology-title {
+        font-size: 1em;
+    }
+    .technology-author {
+        font-size: 0.8em;
+        font-weight: 400;
+    }
     .technology-url a, .find-more a {
+        font-size: 0.8em;
         font-weight: 400;
     }
-  }
+}
+
+@media (max-width: 480px) {
+    .technology-news-headline {
+        font-size: 1.2em;
+    }
+    .technology-title {
+        font-size: 0.9em;
+    }
+    .technology-author {
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+    .technology-url a, .find-more a {
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+}

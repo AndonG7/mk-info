@@ -42,21 +42,75 @@
     font-size: 1em;
 }
 
-@media (max-width: 620px) {
-    .sport-news-headline,
+@media (max-width: 1025px) {
+    .sportNews {
+        margin-top: 50px;
+    }
+    .sport-news-headline {
+        font-size: 2em;
+    }
+    .sport-author {
+        font-size: 0.95em;
+    }.sport-url a, .find-more a {
+        font-weight: 300;
+    }
+    .find-more {
+        font-size: 1em;
+    }   
+}
+
+@media (max-width: 850px) {
+    .sportNews {
+        margin-top: 40px;
+    }
+    .sport-news-headline {
+        font-size: 1.7em;
+    }
     .sport-title {
         font-size: 1.5em;
     }
-
-    .sport-title {
-        font-weight: 600;
-    }
-    
     .sport-author {
+        font-size: 0.85em;
+        font-weight: 400;
+    }.sport-url a, .find-more a {
+        font-size: 0.85em;
         font-weight: 400;
     }
-    
+}
+
+@media (max-width: 650px) {
+    .sportNews {
+        margin-top: 35px;
+    }
+    .sport-news-headline {
+        font-size: 1.4em;
+    }
+    .sport-title {
+        font-size: 1em;
+    }
+    .sport-author {
+        font-size: 0.8em;
+        font-weight: 400;
+    }
     .sport-url a, .find-more a {
+        font-size: 0.8em;
         font-weight: 400;
     }
-  }
+}
+
+@media (max-width: 480px) {
+    .sport-news-headline {
+        font-size: 1.2em;
+    }
+    .sport-title {
+        font-size: 0.9em;
+    }
+    .sport-author {
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+    .sport-url a, .find-more a {
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+}
