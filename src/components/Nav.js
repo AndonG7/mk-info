@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-globals */
 import { React, useState, useEffect } from "react";
 import "./nav.css";
-import logoWhite from "../images/mki-logo-white.png"
+import logo from "../images/logo.png"
 import SlidingNews from "./slidingNews";
 import Menu from "./menu";
 import instagram from "../images/instagram.png";
@@ -74,7 +74,7 @@ function Nav(props) {
   return (
       <div className={isSticky ? 'Nav Nav-sticky' : 'Nav'}>
         <div className={isSticky ? 'nav-bar nav-bar-sticky' : 'nav-bar'}>
-          <img className={isSticky ? "logo-sticky logo" : "logo"} alt="logo" src={logoWhite}></img>
+          <a className="logo-holder" href="/"><img className={isSticky ? "logo-sticky logo" : "logo"} alt="logo" src={logo}></img></a>
           <div className={isSticky ? 'menu menu-sticky' : 'menu'}>
           {smallScreen ? <div className="hamburger" onClick={hamburgerClick}>
               <div className="line"></div>

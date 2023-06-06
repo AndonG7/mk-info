@@ -11,14 +11,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 150px;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 8%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,1) 90%);
+    background-color: rgb(81, 0, 134);
     transition: all 0.3s ease-in-out;
 }
 
 .logo {
-    height: 70px;
+    height: 40px;
     transition: all 0.2s ease-in-out;
+}
+
+.logo-holder {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    align-items: center; 
 }
 
 .menu {
@@ -50,12 +58,12 @@
 /* Sticky CSS */
 
 .nav-bar-sticky {
-    background-color: black;
+    background-color: rgb(37, 0, 61);
 }
 
 
 .logo-sticky {
-    height: 50px;
+    height: 30px;
 }
 
 .menu-sticky {
@@ -221,10 +229,10 @@
 /* Small Desktop Style*/
 @media only screen and (max-width: 1025px) {
     .nav-bar {
-        padding: 10px 120px;
+        padding: 10px 100px;
     }
     .logo {
-        height: 60px;
+        height: 40px;
     }
     .menu {
         font-size: 1.1em;
@@ -235,13 +243,13 @@
 
     /* Sticky CSS */
     .logo-sticky {
-        height: 40px;
+        height: 30px;
     }
     .menu-sticky {
         font-size: 0.9em;
     }
     .nav-bar-sticky {
-        padding: 10px 100px;
+        padding: 10px 90px;
     }
     .top-news-line-sticky {
         font-size: 0.9em;
@@ -257,12 +265,12 @@
         padding: 10px 100px;
     }
     .logo {
-        height: 60px;
+        height: 40px;
     }
 
     /* Sticky CSS */
     .logo-sticky {
-        height: 40px;
+        height: 30px;
     }
     .nav-bar-sticky {
         padding: 10px 90px;
@@ -290,10 +298,13 @@
         padding: 10px 80px;
     }
     .logo {
-        height: 50px;
+        height: 35px;
     }
     .logo-sticky {
-        height: 40px;
+        height: 30px;
+    }
+    .nav-bar-sticky {
+        padding: 10px 65px;
     }
     .hamburger-menu {
         width: 40%;
@@ -306,12 +317,12 @@
         padding: 10px 50px;
     }
     .logo {
-        height: 50px;
+        height: 30px;
     }
 
     /* Sticky CSS */
     .logo-sticky {
-        height: 40px;
+        height: 25px;
     }
     .nav-bar-sticky {
         padding: 10px 40px;
